@@ -1,0 +1,153 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv
+
+# PyCharm
+.idea/
+*.swp
+*.swo
+*~
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# IPython
+.ipython/
+profile_default/
+ipython_config.py
+
+# Large data files and datasets
+*.zip
+FFHQ_256_(images_only)/
+FFHQ_256_(images_only).zip
+data/
+datasets/
+*.tar
+*.tar.gz
+*.7z
+*.rar
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.weights
+*.ckpt
+models/
+checkpoints/
+saved_models/
+ffhq_10m.pt
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Results and outputs (large files)
+results/
+output/
+outputs/
+logs/
+runs/
+
+# Generated files that should not be committed
+*.csv (optional - only if generated)
+metrics_comparison.png (optional - only if generated)
+dps_all_results.png (optional - only if generated)
+
+# OS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Byte-compiled files
+*.pyc
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Distribution
+*.tar.gz
+*.zip
+
+# Documentation
+site/
+docs/_build/
+
+# Testing
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# CUDA/GPU related
+*.o
+*.a
+*.la
+*.lo
+*.gch
+
+# Large video/audio files
+*.mp4
+*.avi
+*.mov
+*.mp3
+*.wav
+
+# Temporary inference/processing files
+/tmp/
+/temp/
+/cache/

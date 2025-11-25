@@ -1,0 +1,3 @@
+[submodule "diffusion-posterior-sampling"]
+	path = diffusion-posterior-sampling
+	url = https://github.com/DPS2022/diffusion-posterior-sampling.git
