@@ -234,19 +234,6 @@ task_config = {
 - ✅ **MSE reduction of -0.0074** → Significant pixel-level error reduction
 - ✅ **MAE reduction of -0.0110** → Better average pixel reconstruction
 
-#### Best Performing Images
-
-**🏆 Image 5 (09368.jpg) - Best PSNR Improvement:**
-- Input PSNR: 18.77 dB → Output PSNR: 29.56 dB
-- **Improvement: +10.80 dB** ⭐⭐⭐
-
-**🏆 Image 5 (09368.jpg) - Best SSIM:**
-- Output SSIM: 0.9218 (highest quality)
-- **Improvement: +0.0300** ⭐⭐⭐
-
-**🏆 Image 5 (09368.jpg) - Best LPIPS Improvement:**
-- Input LPIPS: 0.1924 → Output LPIPS: 0.0615
-- **Improvement: +0.1309** (perceptually very similar) ⭐⭐⭐
 
 #### Metrics by Category
 
@@ -286,6 +273,81 @@ Average: 0.1120 (+0.0612 improvement)
 #### Pixel-Level Error Metrics
 
 **MSE (Mean Squared Error) - Lower is Better:**
+```
+Input Average MSE:  0.0091
+Output Average MSE: 0.0018
+Improvement: -0.0074 (81% reduction) ✅ Excellent
+```
+
+**MAE (Mean Absolute Error) - Lower is Better:**
+```
+Input Average MAE:  0.0303
+Output Average MAE: 0.0193
+Improvement: -0.0110 (37% reduction) ✅ Excellent
+```
+
+---
+
+## 🎨 Visual Results
+
+### Combined Results - All 5 Test Images
+
+Here's a comprehensive view of all 5 test images showing the original, degraded (center box removed), and reconstructed outputs:
+
+![DPS All Results](dps_all_results.png)
+
+*Figure 1: Complete reconstruction results for all 5 test images. Each row shows: Original → Degraded (96×96 center box inpainting) → DPS Reconstruction*
+
+### Alternative Visualization
+
+![DPS All Results 2](dps_all_results2.png)
+
+*Figure 2: Side-by-side comparison demonstrating DPS's ability to reconstruct high-quality facial features from heavily degraded inputs*
+
+### Individual Task Results
+
+#### Inpainting Results
+
+<div align="center">
+
+| Small Inpainting | Large Inpainting |
+|:---:|:---:|
+| ![Small Inpainting 1](69963_result_small_inpainting.png) | ![Large Inpainting 1](69970_result_big_inpainting.png) |
+| ![Small Inpainting 2](69984_result_small_inpainting.png) | ![Large Inpainting 2](69996_result_big_inpainting.png) |
+
+*Inpainting results showing DPS reconstruction quality for different mask sizes*
+
+</div>
+
+#### Motion Deblurring Results
+
+<div align="center">
+
+| Motion Deblurring Example 1 | Motion Deblurring Example 2 |
+|:---:|:---:|
+| ![Motion Deblur 1](69951_result_motion_deblurring.png) | ![Motion Deblur 2](69957_result_motion_deblurring.png) |
+
+*Motion deblurring results demonstrating DPS's effectiveness in removing motion blur artifacts*
+
+</div>
+
+#### Additional Results
+
+<div align="center">
+
+| Result 1 | Result 2 |
+|:---:|:---:|
+| ![Result 1](69938_result.png) | ![Result 2](69954_result.png) |
+
+*Additional reconstruction examples showing consistent quality across different images*
+
+</div>
+
+> 💡 **Note**: All results were generated using the same pre-trained FFHQ diffusion model without any task-specific fine-tuning, demonstrating the versatility of Diffusion Posterior Sampling!
+
+---
+
+## 📚 Notebook Structure
 ```
 Input Average MSE:  0.0091
 Output Average MSE: 0.0018
